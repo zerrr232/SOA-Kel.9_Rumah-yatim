@@ -1,0 +1,292 @@
+body{
+    margin: 0;
+    font-family: "Roboto";
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: #fef7ff;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 22px;
+}
+
+.navbar .logo{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 6px;
+}
+
+.navbar .pages{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.navbar .pages a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar .pages a:hover{
+    color: #000000;
+    text-decoration: underline;
+}
+
+.navbar .login{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.navbar .login a{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #65558f;
+    text-decoration: none;
+    border-radius: 100px;
+    color: white;
+    font-family: "Roboto";
+    font-size: 20px;
+}
+
+.navbar .login a:hover, .navbar .login button:hover{
+    background-color: #836eb8;
+    cursor: pointer;
+}
+
+.navbar .login span{
+    font-size: 70%;
+}
+
+.navbar .login button{
+    background-color: #65558f;
+    border-radius: 100px;
+    color: white;
+    font-family: "Roboto";
+    font-size: 12px;
+}
+
+.heroSection{
+    width: 100%;
+    height: 470px;
+    position: relative;
+}
+
+.heroSection .text{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    color: white;
+    z-index: 10;
+}
+
+.heroSection .text h1{
+    font-weight: normal;
+    font-size: 48px;
+    margin: 0px;
+}
+
+.heroSection .text span{
+    width: 50%;
+    text-align: center;
+}
+
+.heroSection .textBlock{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: 30%;
+    z-index: 9;
+}
+
+.heroSection img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 8;
+}
+
+.searchBar {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px 58px;
+    gap: 40px;
+}
+
+.searchBar #cariPanti, .searchBar #cariKota{
+    height: 100%;
+    width: 20%;
+    border-radius: 28px;
+    border-style: none;
+    background-color: #d1d1d1;
+    box-sizing: border-box;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.searchBar #cariPanti:hover, .searchBar #cariKota:hover{
+    border: #858585 solid 2px;
+}
+
+.map{
+    width: 100%;
+    height: 600px;
+    background-color: #e9e9e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px 50px;
+}
+
+.map #mapShow{
+    width: 80%;
+    height: 80%;
+}
+
+.daftarPanti{
+    width: 100%;
+}
+
+.daftarPanti .daftarPantiHeader{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.daftarPanti .daftarPantiHeader h1{
+    font-size: 48px;
+    font-weight: normal;
+}
+
+.daftarPanti hr{
+    width: 420px;
+    height: 1px;
+}
+
+.daftarPanti .cardContainer{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.daftarPanti .cardContainer .card{
+    width: 30%;
+    height: 100%;
+    background-color: #fef7ff;
+    border-radius: 20px;
+    border: #d7d1dc solid 2px;
+}
+
+.daftarPanti .cardContainer .card img{
+    width: 100%;
+    height: 40%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.daftarPanti .cardContainer .card .content{
+    width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+    padding: 16px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.daftarPanti .cardContainer .card .content .header{
+    width: 100%;
+}
+
+.daftarPanti .cardContainer .card h1{
+    font-size: 22px;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.daftarPanti .cardContainer .card span, .daftarPanti .cardContainer .desc span{
+    font-size: 20px;
+}
+
+.daftarPanti .cardContainer .desc{
+    width: 100%;
+    height: 50%;
+}
+
+.daftarPanti .cardContainer .button{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: right;
+}
+
+.daftarPanti .cardContainer .button button{
+    width: 40%;
+    height: 100%;
+    background-color: #65558f;
+    border-radius: 100px;
+    border-style: none;
+    color: white;
+    font-family: "Roboto";
+    font-size: 20px;
+}
+
+.daftarPanti .displayMore{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.daftarPanti .displayMore button{
+    width: 30%;
+    height: 50%;
+    background-color: #65558f;
+    border-radius: 100px;
+    border-style: none;
+    color: white;
+    font-family: "Roboto";
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: #2C3E50;
+}

@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">
+                <img src="asset/logo.png">
+                <span>Cerahati</span>
+            </div>
+            <div class="pages">
+                <a href="#">Tentang Kami</a>
+                <a href="#">Cari Panti</a>
+                <a href="#">Donasi</a>
+                <a href="#">Kontak Kami</a>
+            </div>
+            <div class="login" id="login">
+            <!--<a href="login.html">Login</a>
+            <span>👤 test</span>
+            <button onclick="logout()">Logout</button>-->
+            </div>
+        </div>
+        <div class="heroSection">
+            <div class="text">
+                <h1>Cerahati</h1>
+                <span>Temukan berbagai panti asuhan yang membutuhkan dukungan dan perhatian. 
+                    Cari informasi lengkap tentang rumah panti, termasuk lokasi, fasilitas, 
+                    dan cara berkontribusi. Mari bersama-sama menciptakan masa depan yang lebih 
+                    baik bagi anak-anak yang membutuhkan.</span>
+            </div>
+            <div class="textBlock"></div>
+            <img src="asset/hero img.png">
+        </div>
+        <div class="searchBar">
+            <input type="text" id="cariPanti" placeholder="Cari Panti">
+            <input type="text" id="cariKota" placeholder="Cari Kota">
+        </div>
+        <div class="map">
+            <div id="mapShow">
+
+            </div>
+        </div>
+        <div class="daftarPanti">
+            <div class="daftarPantiHeader">
+                <h1>Daftar Panti</h1>
+            </div>
+            <hr>
+            <div class="cardContainer">
+                <div class="card">
+                    <img src="asset/Media.png">
+                    <div class="content">
+                        <div class="header">
+                            <h1>Panti 1</h1>
+                            <span>Kota</span>
+                        </div>
+                        <div class="desc">
+                            <span>Alamat</span>
+                        </div>
+                        <div class="button">
+                            <button onclick="">Lihat</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="asset/Media.png">
+                    <div class="content">
+                        <div class="header">
+                            <h1>Panti 1</h1>
+                            <span>Kota</span>
+                        </div>
+                        <div class="desc">
+                            <span>Alamat</span>
+                        </div>
+                        <div class="button">
+                            <button onclick="">Lihat</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="asset/Media.png">
+                    <div class="content">
+                        <div class="header">
+                            <h1>Panti 1</h1>
+                            <span>Kota</span>
+                        </div>
+                        <div class="desc">
+                            <span>Alamat</span>
+                        </div>
+                        <div class="button">
+                            <button onclick="">Lihat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="displayMore">
+                <button onclick="">Tampilkan Lebih Banyak Rumah Panti</button>
+            </div>
+        </div>
+        <div class="footer">
+            <h1>footer</h1>
+        </div>
+        <script src="indexScript.js"></script>
+    </body>
+</html>
