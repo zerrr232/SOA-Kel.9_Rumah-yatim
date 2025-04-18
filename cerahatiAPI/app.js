@@ -5,6 +5,7 @@ const usersRoutes = require('./routes/usersRoutes');
 const bookmarkRoutes = require('./routes/bookmarkRoutes')
 const donationRoutes = require('./routes/donationRoutes')
 const authRoutes = require('./routes/authRoutes')
+const registerRoutes = require('./routes/registerRoutes')
 const path = require('path');
 const rateLimit = require('express-rate-limit');
 
@@ -18,6 +19,7 @@ app.use('/users', usersRoutes);
 app.use('/bookmark', bookmarkRoutes);
 app.use('/donation', donationRoutes);
 app.use('/login', authRoutes);
+app.use('/register', registerRoutes)
 
 app.use(express.static(path.join(__dirname, '../frontend')));
 

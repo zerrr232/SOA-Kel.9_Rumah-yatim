@@ -17,7 +17,7 @@ function logout() {
 
 let allPanti = [];
 
-const map = L.map('mapShow').setView([-6.2, 106.8], 11); // Koordinat default (Jakarta)
+const map = L.map('mapShow').setView([-6.2, 106.8], 11);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
@@ -25,8 +25,8 @@ const map = L.map('mapShow').setView([-6.2, 106.8], 11); // Koordinat default (J
 fetch("http://localhost:3000/rumah_yatim")
   .then(response => response.json())
   .then(data => {
-    allPanti = data; // simpan semua data untuk pencarian
-    showPanti(data); // tampilkan semua panti saat pertama kali
+    allPanti = data; 
+    showPanti(data); 
   })
   .catch(err => {
     console.error("Gagal mengambil data:", err);
@@ -36,7 +36,7 @@ const markerGroup = L.layerGroup().addTo(map);
 function showPanti(data) {
   const container = document.getElementsByClassName("cardContainer")[0];
   const mapShow = document.getElementById("mapShow");
-  container.innerHTML = ""; // hapus isi sebelumnya
+  container.innerHTML = "";
   markerGroup.clearLayers();
 
   data.forEach(panti => {
@@ -65,13 +65,12 @@ function showPanti(data) {
   });
 }
 
-// Event listener untuk search box
 document.getElementById("cariPanti").addEventListener("input", function () {
   const keyword = this.value.toLowerCase();
   const filtered = allPanti.filter(panti =>
     panti.nama_panti.toLowerCase().includes(keyword)
   );
-  showPanti(filtered); // tampilkan yang cocok saja
+  showPanti(filtered);
 });
 
 document.getElementById("cariKota").addEventListener("input", function () {
@@ -79,5 +78,5 @@ document.getElementById("cariKota").addEventListener("input", function () {
   const filtered = allPanti.filter(panti =>
     panti.nama_kota.toLowerCase().includes(keyword)
   );
-  showPanti(filtered); // tampilkan yang cocok saja
+  showPanti(filtered); 
 });
