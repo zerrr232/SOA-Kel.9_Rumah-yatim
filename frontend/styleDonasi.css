@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    font-family: "Roboto";
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: #fef7ff;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 22px;
+}
+
+.navbar .logo{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 6px;
+}
+
+.navbar .logo a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .pages{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.navbar .pages a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar .pages a:hover{
+    color: #000000;
+    text-decoration: underline;
+}
+
+.navbar .login{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.navbar .login a{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #65558f;
+    text-decoration: none;
+    border-radius: 100px;
+    color: white;
+    font-family: "Roboto";
+    font-size: 20px;
+}
+
+.navbar .login a:hover, .navbar .login button:hover{
+    background-color: #836eb8;
+    cursor: pointer;
+}
+
+.navbar .login span{
+    font-size: 70%;
+}
+
+.navbar .login button{
+    background-color: #65558f;
+    border-radius: 100px;
+    color: white;
+    font-family: "Roboto";
+    font-size: 12px;
+}
+
+.listDonasi{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px 200px;
+}
+
+.listDonasi .leaderboard{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    border: #000000 solid 2px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.listDonasi .leaderboard table{
+    width: 100%;
+    border-spacing: 0px;
+}
+
+.listDonasi .leaderboard table tr:hover{
+    background-color: #f1f1f1;
+}
+
+.listDonasi .leaderboard table .donatur{
+    text-align: left;
+}
+
+.listDonasi .leaderboard table .total{
+    text-align: right;
+}
