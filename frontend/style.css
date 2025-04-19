@@ -22,6 +22,11 @@ body{
     gap: 6px;
 }
 
+.navbar .logo a{
+    text-decoration: none;
+    color: black;
+}
+
 .navbar .pages{
     width: 70%;
     height: 100%;
