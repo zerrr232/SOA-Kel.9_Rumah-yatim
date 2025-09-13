@@ -81,7 +81,7 @@ router.post('/', async (req, res) => {
       null,
       {
         params: {
-          secret: '6LeHdBwrAAAAALQjRXZFQC6S16iyOJ4NaIIY4ZZr', 
+          secret: 'YOUR-KEY', 
           response: token
         }
       }
