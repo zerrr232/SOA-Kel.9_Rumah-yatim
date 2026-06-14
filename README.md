@@ -14,7 +14,7 @@ Putra Mahandika - 2110511047
 
 1. Clone repository:
 ```bash
-git clone [URL_REPOSITORY]
+git clone https://github.com/zerrr232/SOA-Kel.9_Rumah-yatim
 cd cerahati
 ```
 
@@ -23,36 +23,30 @@ cd cerahati
 npm install
 ```
 
-3. Setup environment variables:
+3. Setup Database MySQL
 ```bash
-cp .env.example .env
-```
-Edit file `.env` dengan kredensial database dan konfigurasi Redis.
-
-4. Import database:
-```bash
-mysql -u [username] -p [database_name] < cerahati.sql
+1. Jalankan MySQL Anda (misal melalui XAMPP).
+2. Buat database baru bernama cerahati melalui phpMyAdmin atau klien database favorit Anda.
+3. Import file cerahati.sql yang ada di dalam repositori ini ke dalam database cerahati tersebut.
 ```
 
-5. Install dan jalankan Redis:
-```bash
-# Windows (menggunakan WSL)
-wsl
-sudo service redis-server start
+4. Jalankan Server Redis
+Pastikan layanan Redis Anda sudah aktif sebelum menyalakan aplikasi.
+- Di Windows/Linux: Buka terminal baru dan ketik redis-server untuk mengaktifkannya.
 
-# Linux
-sudo systemctl start redis
-
-# MacOS dengan Homebrew
-brew services start redis
-```
-
-6. Jalankan aplikasi:
+Cara Menjalankan Aplikasi
+Setelah semua langkah di atas selesai, buka folder cerahatiAPI dan jalankan aplikasi dengan perintah:
 ```bash
 node app.js
 ```
 
-(Optional) Untuk menjalankan Front-end
-1. Edit app.js menggunakan notepad atau VS code
-2. Pergi ke baris 60 "app.use(express.static(path.join(__dirname, '/frontend')));"
-3. Ubah string '/frontend' di baris tersebut dan sesuaikan dengan direktori folder frontend yang ada di branch utama
+Cara Mengonfigurasi Front-End (Opsional)
+1. Buka file `app.js` menggunakan VS Code atau Text Editor pilihan Anda.
+2. Cari baris kode berikut (sekitar baris 60):
+   ```javascript
+   app.use(express.static(path.join(__dirname, '/frontend')));
+   ```
+3. Ubah teks '/frontend' sesuai dengan nama atau lokasi folder tempat Anda menyimpan folder frontend proyek ini.
+4. Simpan file app.js, lalu jalankan ulang aplikasi menggunakan perintah node app.js.
+5. Buka browser dan akses http://localhost:3000.
+
